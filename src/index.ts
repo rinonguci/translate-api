@@ -4,13 +4,10 @@ const cors = require('cors');
 const app = express();
 const port = 1234;
 
-app.use(
-  cors({
-    origin: '*',
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    preflightContinue: false,
-  })
-);
+app.use(cors());
+
+app.options('*', cors());
+
 app.get('/', async (req, res) => {
   const params = ['from', 'to', 'text'];
 
