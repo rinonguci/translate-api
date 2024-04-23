@@ -7,10 +7,10 @@
     "dev": "nodemon"
   },
   "dependencies": {
-    "@vitalets/google-translate-api": "^8.0.0",
     "cord": "^1.0.0",
     "cors": "^2.8.5",
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "free-google-translator-api": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.31",
